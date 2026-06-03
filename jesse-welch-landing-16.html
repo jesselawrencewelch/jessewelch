@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '5776198509119855');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=5776198509119855&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse Welch - Paid Media & Creative for E-Commerce Brands</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet"></noscript>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black:   #0a0a0a;
+    --black-2: #111111;
+    --black-3: #1a1a1a;
+    --white:       #ffffff;
+    --white-60:    rgba(255,255,255,0.6);
+    --white-30:    rgba(255,255,255,0.3);
+    --white-10:    rgba(255,255,255,0.08);
+    --accent:      #e8c97e;
+    --border:      rgba(255,255,255,0.09);
+    --border-h:    rgba(255,255,255,0.18);
+    --g-blue:  #4285F4;
+    --g-red:   #EA4335;
+    --g-yellow:#FBBC05;
+    --g-green: #34A853;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0; z-index: 100;
+    height: 52px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2.5rem;
+    background: rgba(10,10,10,0.93);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-name { font-family:'Bebas Neue',sans-serif; font-size:1.35rem; letter-spacing:.08em; color:var(--white); text-decoration:none; }
+  .nav-right { display:flex; align-items:center; gap:1.25rem; }
+  .nav-spots { font-size:.68rem; font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--accent); }
+  .nav-cta {
+    background:var(--white); color:var(--black);
+    padding:.4rem 1rem; font-size:.72rem; font-weight:800;
+    letter-spacing:.07em; text-transform:uppercase;
+    border-radius:2px; text-decoration:none; transition:background .2s;
+  }
+  .nav-cta:hover { background:var(--accent); }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 52px);
+    margin-top: 52px;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    padding: 2rem 2.5rem;
+    display: flex; flex-direction: column; justify-content: center;
+    border-right: 1px solid var(--border);
+    gap: 1rem;
+  }
+  .eyebrow { font-size:.65rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:.5rem; }
+  .eyebrow::before { content:''; width:16px; height:1px; background:var(--accent); display:block; }
+  h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.6rem,4.5vw,5rem); letter-spacing:.04em; line-height:.92; color:var(--white); }
+  h1 span { color:var(--accent); }
+  .hero-sub { font-size:.85rem; font-weight:300; color:var(--white-60); line-height:1.7; max-width:380px; }
+
+  .google-badge {
+    display:inline-flex; align-items:center; gap:.65rem;
+    background:var(--white-10); border:1px solid var(--border);
+    border-radius:3px; padding:.45rem .85rem; width:fit-content;
+  }
+  .google-logo { font-size:.85rem; font-weight:700; font-family:Arial,sans-serif; display:flex; letter-spacing:-.01em; }
+  .badge-sep { width:1px; height:18px; background:var(--border); }
+  .badge-stars { color:var(--g-yellow); font-size:.75rem; letter-spacing:1px; }
+  .badge-text { font-size:.72rem; color:var(--white-60); }
+  .badge-text strong { color:var(--white); font-weight:600; }
+
+  .proof-row { display:flex; gap:0; border:1px solid var(--border); border-radius:3px; overflow:hidden; }
+  .proof-item { flex:1; padding:.7rem .9rem; border-right:1px solid var(--border); }
+  .proof-item:last-child { border-right:none; }
+  .proof-num { font-family:'Bebas Neue',sans-serif; font-size:1.45rem; letter-spacing:.04em; color:var(--white); display:block; line-height:1; margin-bottom:.1rem; }
+  .proof-label { font-size:.6rem; color:var(--white-30); text-transform:uppercase; letter-spacing:.06em; font-weight:500; }
+
+  .hero-right {
+    background: var(--black-2);
+    padding: 1.75rem 2rem;
+    display: flex; flex-direction: column; justify-content: flex-start;
+    overflow-y: auto;
+    border-left: 1px solid var(--border);
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+  }
+  .hero-right::-webkit-scrollbar { width: 4px; }
+  .hero-right::-webkit-scrollbar-track { background: transparent; }
+  .hero-right::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+  .form-title { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; letter-spacing:.06em; color:var(--white); margin-bottom:.2rem; }
+  .form-sub { font-size:.72rem; color:var(--white-30); margin-bottom:1rem; }
+
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+  .form-group { margin-bottom:.6rem; }
+  label { display:block; font-size:.6rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--white-30); margin-bottom:.22rem; }
+  input, select, textarea {
+    width:100%; padding:.5rem .75rem;
+    font-family:'Inter',sans-serif; font-size:.82rem;
+    color:var(--white); background:var(--white-10);
+    border:1px solid var(--border); border-radius:2px;
+    outline:none; transition:border-color .15s,background .15s;
+    -webkit-appearance:none; appearance:none;
+  }
+  input::placeholder { color:rgba(255,255,255,.18); }
+  input:focus, select:focus, textarea:focus { border-color:var(--accent); background:rgba(232,201,126,.04); }
+  select {
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='rgba(255,255,255,0.3)' d='M5 7L0 2h10z'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right .7rem center;
+    background-color:var(--white-10); padding-right:2rem;
+    color:rgba(255,255,255,.4);
+  }
+  select option { background:#1a1a1a; color:#fff; }
+  textarea { min-height:60px; resize:none; }
+  .submit-btn {
+    width:100%; background:var(--accent); color:var(--black);
+    border:none; padding:.75rem; font-family:'Inter',sans-serif;
+    font-size:.78rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+    cursor:pointer; border-radius:2px; margin-top:.25rem; transition:opacity .2s;
+  }
+  .submit-btn:hover { opacity:.86; }
+  .form-note { text-align:center; font-size:.62rem; color:var(--white-30); margin-top:.5rem; font-style:italic; }
+  .success-msg { display:none; text-align:center; padding:2rem 1rem; }
+  .success-msg h3 { font-family:'Bebas Neue',sans-serif; font-size:1.8rem; letter-spacing:.06em; color:var(--white); margin-bottom:.4rem; }
+  .success-msg p { color:var(--white-60); font-size:.84rem; }
+  .success-sig { color:var(--accent); font-size:.78rem; margin-top:.4rem; }
+  .calendly-btn {
+    display:inline-block; background:transparent;
+    border:1px solid var(--accent); color:var(--accent);
+    padding:.55rem 1.4rem; font-family:'Inter',sans-serif;
+    font-size:.75rem; font-weight:700; letter-spacing:.08em;
+    text-transform:uppercase; border-radius:2px; text-decoration:none;
+    transition:background .2s, color .2s;
+  }
+  .calendly-btn:hover { background:var(--accent); color:var(--black); }
+
+  /* REVIEWS STRIP */
+  .results-strip { background: var(--accent); }
+  .results-inner { max-width:1100px; margin:0 auto; padding:1rem 2.5rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap; }
+  .results-label { font-size:.63rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:rgba(10,10,10,0.5); white-space:nowrap; display:flex; align-items:center; gap:.5rem; }
+  .results-label::after { content:''; flex:1; height:1px; background:rgba(10,10,10,0.15); min-width:16px; }
+  .results-stats { display:flex; align-items:stretch; gap:0; flex:1; }
+  .results-stat { flex:1; text-align:center; padding:.2rem 1.25rem; border-right:1px solid rgba(10,10,10,0.12); }
+  .results-stat:last-child { border-right:none; }
+  .results-num { font-family:'Bebas Neue',sans-serif; font-size:1.85rem; letter-spacing:.04em; color:var(--black); line-height:1; display:block; }
+  .results-desc { font-size:.63rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:rgba(10,10,10,0.55); margin-top:.12rem; }
+  .results-caveat { font-size:.6rem; color:rgba(10,10,10,0.4); font-style:italic; white-space:nowrap; align-self:flex-end; padding-bottom:.1rem; }
+
+  .reviews-strip {
+    border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+    padding:1.4rem 0; overflow:hidden; position:relative; background:var(--black-2);
+  }
+  .reviews-strip::before,.reviews-strip::after {
+    content:''; position:absolute; top:0; bottom:0; width:90px; z-index:2; pointer-events:none;
+  }
+  .reviews-strip::before { left:0;  background:linear-gradient(to right,var(--black-2),transparent); }
+  .reviews-strip::after  { right:0; background:linear-gradient(to left, var(--black-2),transparent); }
+  .reviews-track { display:flex; gap:.9rem; animation:scroll-r 55s linear infinite; width:max-content; }
+  .reviews-track:hover { animation-play-state:paused; }
+  @keyframes scroll-r { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .review-card {
+    background:var(--black-3); border:1px solid var(--border); border-radius:4px;
+    padding:.9rem 1.1rem; min-width:270px; max-width:270px; flex-shrink:0;
+  }
+  .review-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:.45rem; }
+  .review-stars { color:var(--g-yellow); font-size:.72rem; letter-spacing:2px; }
+  .review-google { font-size:.68rem; font-weight:700; font-family:Arial,sans-serif; display:flex; }
+  .review-text { font-size:.77rem; color:var(--white-60); line-height:1.6; margin-bottom:.5rem; font-style:italic; }
+  .review-meta { display:flex; align-items:center; justify-content:space-between; }
+  .review-author { font-size:.65rem; font-weight:600; color:var(--white-30); text-transform:uppercase; letter-spacing:.05em; }
+  .review-industry { font-size:.62rem; color:var(--accent); opacity:.7; }
+
+
+  .section-divider { height:1px; background:var(--border); }
+  .section-label { font-size:.63rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin-bottom:.7rem; display:flex; align-items:center; gap:.5rem; }
+  .section-label::before { content:''; width:14px; height:1px; background:var(--accent); display:block; }
+  h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.8rem,3vw,2.6rem); letter-spacing:.04em; line-height:1; color:var(--white); margin-bottom:.9rem; }
+  .body-text { font-size:.87rem; color:var(--white-60); line-height:1.8; margin-bottom:.8rem; }
+
+  .intro { padding:4.5rem 2.5rem; display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; max-width:1100px; margin:0 auto; }
+  .stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--border); border:1px solid var(--border); }
+  .stat-card { background:var(--black-2); padding:1.25rem; }
+  .stat-number { font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:.04em; color:var(--white); display:block; line-height:1; margin-bottom:.18rem; }
+  .stat-label { font-size:.69rem; color:var(--white-30); font-weight:500; }
+
+  .services { padding:4.5rem 2.5rem; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+  .services-inner { max-width:1100px; margin:0 auto; }
+  .services-header { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:2.25rem; gap:2rem; }
+  .services-sub { max-width:290px; font-size:.83rem; color:var(--white-30); line-height:1.7; }
+  .service-list { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border); }
+  .service-item { background:var(--black); padding:1.6rem 1.4rem; transition:background .2s; }
+  .service-item:hover { background:var(--black-3); }
+  .service-num { font-size:.6rem; color:var(--accent); letter-spacing:.1em; margin-bottom:.65rem; display:block; font-weight:600; }
+  .service-title { font-size:.9rem; font-weight:700; color:var(--white); margin-bottom:.5rem; }
+  .service-desc { font-size:.78rem; color:var(--white-30); line-height:1.7; }
+
+  .for-section { padding:4.5rem 2.5rem; max-width:1100px; margin:0 auto; }
+  .for-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--border); border:1px solid var(--border); margin-top:1.75rem; }
+  .for-item { display:flex; align-items:flex-start; gap:.8rem; padding:1.15rem 1.25rem; background:var(--black-2); transition:background .2s; }
+  .for-item:hover { background:var(--black-3); }
+  .check { width:18px; height:18px; border-radius:50%; background:var(--accent); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+  .check svg { width:9px; height:9px; }
+  .for-text { font-size:.84rem; color:var(--white-60); line-height:1.6; }
+  .for-text strong { color:var(--white); font-weight:600; }
+
+  footer { border-top:1px solid var(--border); text-align:center; padding:1.4rem 2.5rem; font-size:.7rem; color:var(--white-30); }
+  footer strong { color:var(--accent); font-weight:500; }
+
+  @media (max-width:900px) {
+    nav { padding:0 1.25rem; }
+    .nav-spots { display:none; }
+
+    .hero { grid-template-columns:1fr; height:auto; }
+    .hero-left { padding:2rem 1.25rem; border-right:none; border-bottom:1px solid var(--border); gap:.75rem; }
+    .hero-right { padding:1.75rem 1.25rem; height:auto; overflow:visible; } .hero-right iframe { height:700px !important; }
+    h1 { font-size:3rem; line-height:.95; }
+    .hero-sub { font-size:.88rem; }
+    .google-badge { padding:.4rem .75rem; }
+    .proof-row { border-radius:2px; }
+    .proof-num { font-size:1.25rem; }
+    .proof-label { font-size:.55rem; }
+    .form-row { grid-template-columns:1fr; gap:.5rem; }
+    .form-title { font-size:1.3rem; }
+
+    .results-inner { flex-direction:column; align-items:flex-start; gap:.75rem; padding:.9rem 1.25rem; }
+    .results-stats { width:100%; display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(10,10,10,0.12); border:1px solid rgba(10,10,10,0.12); }
+    .results-stat { background:var(--accent); border-right:none; padding:.5rem .75rem; text-align:left; }
+    .results-num { font-size:1.5rem; }
+    .results-caveat { font-size:.58rem; }
+    .results-label { font-size:.6rem; }
+
+    .intro { grid-template-columns:1fr; gap:2rem; padding:3rem 1.25rem; }
+    .stat-grid { grid-template-columns:1fr 1fr; }
+    .stat-number { font-size:1.6rem; }
+
+    .services { padding:3rem 1.25rem; }
+    .services-header { flex-direction:column; align-items:flex-start; gap:1rem; margin-bottom:1.5rem; }
+    .service-list { grid-template-columns:1fr; }
+
+    .for-section { padding:3rem 1.25rem; }
+    .for-grid { grid-template-columns:1fr; }
+
+    h2 { font-size:2rem; }
+  }
+
+  @media (max-width:480px) {
+    h1 { font-size:2.5rem; }
+    .proof-row { display:grid; grid-template-columns:1fr 1fr; }
+    .proof-item:nth-child(3) { border-right:none; grid-column:1/-1; border-top:1px solid var(--border); }
+    .results-stats { grid-template-columns:1fr 1fr; }
+    .nav-cta { padding:.38rem .85rem; font-size:.68rem; }
+  }
+  .bio-section { border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+  .bio-inner { max-width:1100px; margin:0 auto; padding:4.5rem 2.5rem; display:grid; grid-template-columns:1fr 1.6fr; gap:4rem; align-items:center; }
+  .bio-img-wrap { position:relative; }
+  .bio-img { width:100%; max-width:340px; border-radius:4px; display:block; filter:grayscale(15%); }
+  .bio-img-accent { position:absolute; bottom:-12px; right:-12px; width:100%; max-width:340px; border:2px solid var(--accent); border-radius:4px; z-index:-1; }
+  .bio-tags { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.5rem; }
+  .bio-tag { font-size:.65rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); border:1px solid rgba(232,201,126,.3); padding:.3rem .7rem; border-radius:2px; }
+  @media (max-width:900px) { .bio-inner { grid-template-columns:1fr; gap:2rem; padding:3rem 1.25rem; } .bio-img { max-width:100%; } .bio-img-accent { display:none; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-name">Jesse Welch</a>
+  <div class="nav-right">
+    <span class="nav-spots">3 spots remaining</span>
+    <a href="#apply" class="nav-cta">Apply Now</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="eyebrow">Paid Media &amp; Creative for E-Commerce Brands</div>
+    <h1>MORE<br>REVENUE.<br><span>LESS</span><br>WASTED SPEND.</h1>
+    <p class="hero-sub">I run the full acquisition system for e-commerce brands - paid ads, creative, and conversion - personally. No handoffs. No junior staff. Just results.</p>
+    <div class="google-badge">
+      <div class="google-logo">
+        <span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span>
+      </div>
+      <div class="badge-sep"></div>
+      <div class="badge-stars">★★★★★</div>
+      <div class="badge-text"><strong>5.0</strong>&nbsp;·&nbsp;23 reviews</div>
+    </div>
+    <div class="proof-row">
+      <div class="proof-item"><span class="proof-num">100%</span><span class="proof-label">Done by Jesse</span></div>
+      <div class="proof-item"><span class="proof-num">$3K+</span><span class="proof-label">Min. engagement</span></div>
+      <div class="proof-item"><span class="proof-num">3</span><span class="proof-label">Open spots</span></div>
+    </div>
+  </div>
+
+  <div class="hero-right" id="apply">
+    <div class="form-title">Apply to work together</div>
+    <div class="form-sub">2 minutes - I'll respond within 48 hours if it's a fit.</div>
+    <iframe data-tally-src="https://tally.so/embed/GxQORL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0" title="Apply to work together"></iframe>
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+  </div>
+</section>
+
+<!-- RESULTS STRIP -->
+<div class="results-strip">
+  <div class="results-inner">
+    <span class="results-label">Live campaign results</span>
+    <div class="results-stats">
+      <div class="results-stat">
+        <span class="results-num">2 Wks</span>
+        <span class="results-desc">Campaign runtime</span>
+      </div>
+      <div class="results-stat">
+        <span class="results-num">9</span>
+        <span class="results-desc">Inbound leads generated</span>
+      </div>
+      <div class="results-stat">
+        <span class="results-num">2</span>
+        <span class="results-desc">Closed applications</span>
+      </div>
+      <div class="results-stat">
+        <span class="results-num">~$10K+</span>
+        <span class="results-desc">Est. client revenue per close</span>
+      </div>
+    </div>
+    <span class="results-caveat">Lead generation campaign, May 2026</span>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-strip">
+  <div class="reviews-track" id="reviewsTrack">
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"Jesse at Radiant Media is fantastic! He was such a dream to work with in creating our promo video. It was quite a process with a lot of people contributing opinions - he handled it all professionally and delivered something we were truly proud of."</p>
+      <div class="review-meta">
+        <div class="review-author">Marisa Lopez</div>
+        <div class="review-industry">Business owner</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"It was an awesome experience to watch Jesse, the director, at his craft. I was treated with such respect and professionalism from everyone on set. Would love to work with them again."</p>
+      <div class="review-meta">
+        <div class="review-author">Colleen Pineau</div>
+        <div class="review-industry">Video production client</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"They were very easy to work with and clearly know what they're doing. Not only professional but went the extra mile making sure we were happy with the shots and everything. Highly recommend!"</p>
+      <div class="review-meta">
+        <div class="review-author">Kevin Lubin</div>
+        <div class="review-industry">Marketing client</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"If you want super quality - the kind that could air on network TV - and still have an ad budget left, look no further. Incredibly nice, know their field, and deliver. Couldn't ask for more."</p>
+      <div class="review-meta">
+        <div class="review-author">Jim Shulman</div>
+        <div class="review-industry">Advertising client</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"They helped bring my vision to life with a combination of talent and creative commitment. The experience exceeded my expectations from start to finish."</p>
+      <div class="review-meta">
+        <div class="review-author">Coach Ray All Day</div>
+        <div class="review-industry">Online education</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"Incredibly professional and a pleasure to work with. Very organized, attentive, and committed to delivering the best experience. I highly recommend them to anyone looking for top-tier results."</p>
+      <div class="review-meta">
+        <div class="review-author">DenisMDesign</div>
+        <div class="review-industry">Design studio</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"The team not only provided great content but guided me through the entire process - figuring out what was best for me not just from a video perspective, but looking at my whole marketing picture."</p>
+      <div class="review-meta">
+        <div class="review-author">Mark Warren</div>
+        <div class="review-industry">Business owner</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"Fantastic video partners over the last 6 months. Always up for a challenge, learning new skills and ideas while producing awesome content. If you need a great team, I highly recommend starting with a chat."</p>
+      <div class="review-meta">
+        <div class="review-author">Carrington Crothers</div>
+        <div class="review-industry">Content &amp; media</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"An experienced team that knows how to tell a story and connect the audience to your brand. The work speaks for itself."</p>
+      <div class="review-meta">
+        <div class="review-author">Todd Jones</div>
+        <div class="review-industry">Brand client</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-google"><span style="color:var(--g-blue)">G</span><span style="color:var(--g-red)">o</span><span style="color:var(--g-yellow)">o</span><span style="color:var(--g-blue)">g</span><span style="color:var(--g-green)">l</span><span style="color:var(--g-red)">e</span></div>
+      </div>
+      <p class="review-text">"Jesse is the guy to talk to if you are looking for video content and someone who is genuinely passionate and very capable. He delivers."</p>
+      <div class="review-meta">
+        <div class="review-author">Mike Roberts</div>
+        <div class="review-industry">Marketing client</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="section-divider"></div>
+
+<section class="bio-section">
+  <div class="bio-inner">
+    <div class="bio-img-wrap">
+      <img src="https://jesselawrencewelch.github.io/jessewelch/welch_jesse.jpeg" alt="Jesse Welch" class="bio-img" />
+      <div class="bio-img-accent"></div>
+    </div>
+    <div class="bio-content">
+      <div class="section-label">Who I Am</div>
+      <h2>One person.<br>Full ownership.<br>Real results.</h2>
+      <p class="body-text">Hey, I'm Jesse. Most marketers do one thing well - they either understand paid media or content creation. I've spent my career mastering both, and more importantly, how they work together to drive real revenue.</p>
+      <p class="body-text">Most agencies hand your ads to one person and your creative to another - and they never talk. I build the full system personally - the creative that stops the scroll and the paid strategy that turns clicks into customers.</p>
+      <div class="stat-grid" style="margin-top:1.5rem;">
+        <div class="stat-card"><span class="stat-number">100%</span><span class="stat-label">Done by me - no outsourcing or handoffs</span></div>
+        <div class="stat-card"><span class="stat-number">$3K</span><span class="stat-label">Minimum engagement - serious brands only</span></div>
+        <div class="stat-card"><span class="stat-number">23</span><span class="stat-label">5-star Google reviews from past clients</span></div>
+        <div class="stat-card"><span class="stat-number">3</span><span class="stat-label">Spots available - kept small intentionally</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="services">
+  <div class="services-inner">
+    <div class="services-header">
+      <div>
+        <div class="section-label">What I Do</div>
+        <h2>The full acquisition<br>stack, handled.</h2>
+      </div>
+      <p class="services-sub">Most brands struggle because their ads and content are built by different people. I unify both - so the message that hooks a customer is the same one that converts them.</p>
+    </div>
+    <div class="service-list">
+      <div class="service-item">
+        <span class="service-num">01</span>
+        <div class="service-title">Paid Media Strategy &amp; Buying</div>
+        <p class="service-desc">Meta and YouTube campaigns built around your ideal customer profile. I manage targeting, creative testing, bidding, and reporting - focused on ROAS and cost-per-purchase, not vanity metrics.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-num">02</span>
+        <div class="service-title">Content Creation &amp; Ad Creative</div>
+        <p class="service-desc">Copy, graphics, and video assets written and produced in-house. Built to stop the scroll and convert browsers into buyers. Ads and content made by the same person - message always consistent.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-num">03</span>
+        <div class="service-title">Pipeline &amp; Conversion Optimization</div>
+        <p class="service-desc">Landing pages, product funnels, and retargeting sequences that convert traffic into sales - and bring customers back for more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="for-section">
+  <div class="section-label">Is This For You?</div>
+  <h2>Built for brands ready<br>to scale with intention.</h2>
+  <div class="for-grid">
+    <div class="for-item">
+      <div class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#0a0a0a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="for-text"><strong>E-commerce brands with a proven product</strong> that want more revenue from their ad spend - consistently and predictably.</p>
+    </div>
+    <div class="for-item">
+      <div class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#0a0a0a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="for-text">You have a <strong>proven product with existing customers</strong> - you just need a better, more reliable way to scale your paid acquisition.</p>
+    </div>
+    <div class="for-item">
+      <div class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#0a0a0a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="for-text">You're tired of <strong>agencies that overpromise and underdeliver</strong> - and want one accountable person who personally owns your ROAS.</p>
+    </div>
+    <div class="for-item">
+      <div class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#0a0a0a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="for-text">You're ready to invest <strong>$3,000/month or more</strong> and want a clear, measurable return on every dollar - not a report full of impressions and reach.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 <strong>Jesse Welch</strong> - Paid Media &amp; Creative for E-Commerce Brands</p>
+</footer>
+
+<script>
+
+  var t = document.getElementById('reviewsTrack');
+  t.innerHTML += t.innerHTML;
+</script>
+</body>
+</html>
